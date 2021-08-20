@@ -8,14 +8,14 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="crossorigin"/>
     <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&amp;family=Roboto:wght@300;400;500;700&amp;display=swap"/>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&amp;family=Roboto:wght@300;400;500;700&amp;display=swap" media="print" onload="this.media='all'"/>
-    <link rel="shortcut icon" type="image/jpg" href="favicon.ico"/>
+    <link rel="shortcut icon" type="image/jpg" href="static/favicon.ico"/>
     <noscript>
       <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&amp;family=Roboto:wght@300;400;500;700&amp;display=swap"/>
     </noscript>
-    <link href="css/font-awesome/css/all.min.css?ver=1.2.1" rel="stylesheet">
-    <link href="css/mdb.min.css?ver=1.2.1" rel="stylesheet">
-    <link href="css/aos.css?ver=1.2.1" rel="stylesheet">
-    <link href="css/main.css?ver=1.2.1" rel="stylesheet">
+    <link href="static/css/font-awesome/css/all.min.css?ver=1.2.1" rel="stylesheet">
+    <link href="static/css/mdb.min.css?ver=1.2.1" rel="stylesheet">
+    <link href="static/css/aos.css?ver=1.2.1" rel="stylesheet">
+    <link href="static/css/main.css?ver=1.2.1" rel="stylesheet">
     <noscript>
       <style type="text/css">
         [data-aos] {
@@ -54,10 +54,10 @@
 <div class="resume-container">
   <div class="shadow-1-strong bg-white my-5" id="intro">
     <div class="bg-info text-white">
-      <div class="cover bg-image"><img src="images/header-background.jpg"/>
+      <div class="cover bg-image"><img src="static/images/header-background.jpg"/>
         <div class="mask" style="background-color: rgba(0, 0, 0, 0.7);backdrop-filter: blur(2px);">
           <div class="text-center p-5">
-            <div class="avatar p-1"><img class="img-thumbnail shadow-2-strong" src="images/avatar.jpg" width="160" height="160"/></div>
+            <div class="avatar p-1"><img class="img-thumbnail shadow-2-strong" src="static/images/avatar.jpg" width="160" height="160"/></div>
             <div class="header-bio mt-3">
               <div data-aos="zoom-in" data-aos-delay="0">
                 <h2 class="h1">Nifemi Sola-Ojo</h2><caption><a href="https://hng.tech">
@@ -227,17 +227,17 @@
             <div class="h6"><i class="far fa-envelope pe-2 text-muted" style="width:24px;opacity:0.85;"></i> nifemisolaojo@ymail.com</div>
           </div>
           <div class="mt-5 d-print-none">
-            <form action="https://formspree.io/your@email.com" method="POST">
+            <form action="/confirm" method="POST">
               <div class="form-outline mb-4">
-                <input type="text" id="name" class="form-control" required/>
+                <input type="text" id="name" name="name" class="form-control" required/>
                 <label class="form-label" for="name">Name</label>
               </div>
               <div class="form-outline mb-4">
-                <input type="email" id="email" class="form-control" required/>
+                <input type="email" id="email" name="email" class="form-control" required/>
                 <label class="form-label" for="email">Email address</label>
               </div>
               <div class="form-outline mb-4">
-                <textarea class="form-control" style="resize: none;" id="message" rows="4" required></textarea>
+                <textarea class="form-control" style="resize: none;" id="message" name="message" rows="4" required></textarea>
                 <label class="form-label" for="message">Message</label>
               </div>
               <button class="btn btn-info btn-block mb-4" type="submit">Send</button>
@@ -277,8 +277,8 @@
         </div>
       </div>
     </footer>
-    <script src="scripts/mdb.min.js?ver=1.2.1"></script>
-    <script src="scripts/aos.js?ver=1.2.1"></script>
-    <script src="scripts/main.js?ver=1.2.1"></script>
+    <script src="static/scripts/mdb.min.js?ver=1.2.1"></script>
+    <script src="static/scripts/aos.js?ver=1.2.1"></script>
+    <script src="static/scripts/main.js?ver=1.2.1"></script>
   </body>
 </html>
