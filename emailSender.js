@@ -21,6 +21,7 @@ function sendEmail(name, email, message, response){
     transporter.sendMail(mailOptions, function(error, info){   
         if (error) {
             console.log(error);
+            console.log('cred', process.env.PASS)
             response.sendFile(path.join(__dirname, '/templates/error.html'));
         } else {
             console.log('Email sent: ' + info.response);
